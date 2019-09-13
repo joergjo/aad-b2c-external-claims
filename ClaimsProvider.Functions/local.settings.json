@@ -1,0 +1,8 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "SqlConnection": "Server=tcp:joergjo-claimsprovider.database.windows.net,1433;Initial Catalog=CustomerDB;Persist Security Info=False;User ID=ClaimsAdmin;Password=@O7o8oE6IOGpdhzlDR323zd7X2h3olid;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet"
+  }
+}
