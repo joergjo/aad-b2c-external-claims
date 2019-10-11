@@ -1,8 +1,8 @@
-﻿using ClaimsProvider.Data;
+﻿using System;
+using ClaimsProvider.Data;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 
 [assembly: FunctionsStartup(typeof(ClaimsProvider.Functions.Startup))]
 

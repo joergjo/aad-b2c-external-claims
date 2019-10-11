@@ -3,9 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimsProvider.Data", "ClaimsProvider.Data\ClaimsProvider.Data.csproj", "{01882E3C-DE06-4B9F-9E12-88ADDF3E95D6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{2E4E8D30-82B0-43BF-BCB4-B2D521AE0E53}"
+	ProjectSection(SolutionItems) = preProject
+		tools\CreateDB.sql = tools\CreateDB.sql
+		tools\template.local.settings.json = tools\template.local.settings.json
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimsProvider.Functions", "ClaimsProvider.Functions\ClaimsProvider.Functions.csproj", "{3F576A96-10D4-4B71-9B8B-082DC4197390}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AE2835C7-9603-479E-9791-1CEDA62A6F65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClaimsProvider.Data", "src\ClaimsProvider.Data\ClaimsProvider.Data.csproj", "{97C2F7D9-7BF0-4131-931C-5E37FAD6E091}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClaimsProvider.Functions", "src\ClaimsProvider.Functions\ClaimsProvider.Functions.csproj", "{0650D01B-12CC-49CC-9AC9-D9443F38632D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "policies", "policies", "{140B0C4F-4BF9-46D5-A63F-C9199428BB92}"
+	ProjectSection(SolutionItems) = preProject
+		policies\PasswordReset.xml = policies\PasswordReset.xml
+		policies\ProfileEdit.xml = policies\ProfileEdit.xml
+		policies\SignUpOrSignin.xml = policies\SignUpOrSignin.xml
+		policies\TrustFrameworkBase.xml = policies\TrustFrameworkBase.xml
+		policies\TrustFrameworkExtensions.xml = policies\TrustFrameworkExtensions.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3C3C233C-F677-4F5D-9BC0-968EEA36EAE8}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,17 +35,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{01882E3C-DE06-4B9F-9E12-88ADDF3E95D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{01882E3C-DE06-4B9F-9E12-88ADDF3E95D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{01882E3C-DE06-4B9F-9E12-88ADDF3E95D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{01882E3C-DE06-4B9F-9E12-88ADDF3E95D6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3F576A96-10D4-4B71-9B8B-082DC4197390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F576A96-10D4-4B71-9B8B-082DC4197390}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F576A96-10D4-4B71-9B8B-082DC4197390}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F576A96-10D4-4B71-9B8B-082DC4197390}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97C2F7D9-7BF0-4131-931C-5E37FAD6E091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C2F7D9-7BF0-4131-931C-5E37FAD6E091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97C2F7D9-7BF0-4131-931C-5E37FAD6E091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C2F7D9-7BF0-4131-931C-5E37FAD6E091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0650D01B-12CC-49CC-9AC9-D9443F38632D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0650D01B-12CC-49CC-9AC9-D9443F38632D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0650D01B-12CC-49CC-9AC9-D9443F38632D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0650D01B-12CC-49CC-9AC9-D9443F38632D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97C2F7D9-7BF0-4131-931C-5E37FAD6E091} = {AE2835C7-9603-479E-9791-1CEDA62A6F65}
+		{0650D01B-12CC-49CC-9AC9-D9443F38632D} = {AE2835C7-9603-479E-9791-1CEDA62A6F65}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {02351EFC-54DD-48BB-A614-4479EC9507F4}
